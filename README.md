@@ -1,32 +1,94 @@
-Foodie CLI Application
-Overview
-The Foodie CLI Application is a Java-based command-line interface (CLI) application inspired by Zomato. It allows customers to choose restaurants, browse dishes, and place orders seamlessly through the terminal.
+🍽️ Foodie CLI Application
 
-Features
-Customer Account Flow: Customer can register and login.
-Restaurant Selection: Browse and select from a list of available restaurants.
-Dish Browsing: View the menu and detailed descriptions of dishes offered by each restaurant.
-Order Placement: Place orders for selected dishes from the chosen restaurant.
-Order Summary: View a summary of your order before finalizing it.
-Installation
-To install and run the Restaurant CLI Application, follow these steps:
+A Java-based Command Line Interface (CLI) application inspired by food ordering platforms like Zomato. This app allows users to browse restaurants, explore menus, and place orders — all from the terminal.
 
-Clone the repository
+📌 Overview
+
+The Foodie CLI Application simulates a real-world food ordering system where users can:
+
+Create and manage customer accounts
+Browse restaurants and menus
+Select dishes and place orders
+View order summaries and history
+
+It’s a great project to demonstrate Java fundamentals, OOP concepts, and CLI-based interaction.
+
+🚀 Features
+👤 Customer Management
+Register a new account
+Login with existing credentials
+🍴 Restaurant Selection
+View available restaurants
+Choose a restaurant to explore
+📖 Menu Browsing
+Display dishes with descriptions
+Easy navigation through menu items
+🛒 Order System
+Select dishes and quantities
+Place orders seamlessly
+📄 Order Summary
+View selected items before confirmation
+Check total bill
+📜 Order History (Optional/Extendable)
+View previously placed orders
+🛠️ Tech Stack
+Language: Java
+Concepts Used:
+Object-Oriented Programming (OOP)
+Collections (ArrayList, etc.)
+Exception Handling
+CLI Interaction (Scanner)
+📂 Project Structure
+foodie-cli-java/
+│── src/
+│   ├── Main.java
+│   ├── Customer.java
+│   ├── Restaurant.java
+│   ├── Dish.java
+│   ├── Order.java
+│
+│── bin/        (compiled classes)
+│── README.md
+⚙️ Installation & Setup
+
+Follow these steps to run the project locally:
+
+1️⃣ Clone the Repository
 git clone https://github.com/madhusamala-dev/foodie-cli-java.git
-CD into the application folder
+2️⃣ Navigate to Project Directory
 cd foodie-cli-java
-Compile the application
- javac -d bin src/*.java
-Run the application
- java -cp bin Main
-Usage
+3️⃣ Compile the Java Files
+javac -d bin src/*.java
+4️⃣ Run the Application
+java -cp bin Main
+💻 Usage
 
-Once the application is running, follow the on-screen prompts to navigate through the menu.
+Once the application starts, follow the menu:
 
-Register/Login: Register as a new customer or login if you already have an account.
-Browse Restaurants: View the list of available restaurants.
-View Dishes: Select a restaurant to view its menu and dish descriptions.
-Place an Order: Choose dishes and place an order.
-View Order History: Access your past orders.
-License
-This project is licensed under the MIT License.
+Register/Login
+Browse Restaurants
+View Menu
+Select Dishes
+Place Order
+View Summary
+🎯 Future Enhancements
+✅ Add database integration (MySQL / MongoDB)
+✅ Implement payment system
+✅ Add admin panel for restaurant management
+✅ Convert CLI → Web App (Spring Boot)
+✅ Add REST APIs
+🤝 Contributing
+
+Contributions are welcome!
+
+Fork the repository
+Create a new branch
+Make your changes
+Submit a Pull Request
+📜 License
+
+This project is open-source and available under the MIT License.
+
+👨‍💻 Author
+
+Chauhan K
