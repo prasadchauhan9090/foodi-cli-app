@@ -2,7 +2,10 @@ package com.chauhan.foodiecliapp.ui;
 
 
 import com.chauhan.foodiecliapp.model.Dish;
+import com.chauhan.foodiecliapp.model.Restaurant;
 
+import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
 
 public class RestaurantsMenu extends Menu {
