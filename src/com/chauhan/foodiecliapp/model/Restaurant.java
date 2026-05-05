@@ -106,4 +106,7 @@ public class Restaurant {
                 ", menu=" + menu +
                 '}';
     }
+
+    public void setMenu() {
+    }
 }

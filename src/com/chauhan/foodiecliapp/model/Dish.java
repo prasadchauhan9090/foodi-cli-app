@@ -23,7 +23,7 @@ public class Dish {
     5. Override toString() methods
      */
 
-    private int id;
+    private String id;
     private String name;
     private String description;
     private double price;
@@ -31,12 +31,21 @@ public class Dish {
     public Dish() {
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
+    }
+    private String restaurantId;
+
+    public String getRestaurantId() {
+        return restaurantId;
+    }
+
+    public void setRestaurantId(String restaurantId) {
+        this.restaurantId = restaurantId;
     }
 
     public double getPrice() {
@@ -63,21 +72,18 @@ public class Dish {
         this.name = name;
     }
 
+    public Dish(String id, double price, String description, String name) {
+        this.id = id;
+        this.price = price;
+        this.description = description;
+        this.name = name;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         Dish dish = (Dish) o;
-        return id == dish.id && Double.compare(price, dish.price) == 0 && Objects.equals(name, dish.name) && Objects.equals(description, dish.description);
-    }
-
-    @Override
-    public String toString() {
-        return "Dish{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", description='" + description + '\'' +
-                ", price=" + price +
-                '}';
+        return Double.compare(price, dish.price) == 0 && Objects.equals(id, dish.id) && Objects.equals(name, dish.name) && Objects.equals(description, dish.description);
     }
 
     @Override
@@ -85,6 +91,15 @@ public class Dish {
         return Objects.hash(id, name, description, price);
     }
 
+    @Override
+    public String toString() {
+        return super.toString();
+    }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
 
 
 
